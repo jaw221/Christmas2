@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:#C1D8C3;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #507687;
+    color: #8CD5C0;
+}
+header h1, header h2, header p {
+    margin: 10px 0;
+    font-family:"Pacifico", cursive;
+    font-weight: 100;
+}
+p{
+    font-size:large;
+}
+/* Navigation links */
+a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #96CEB4;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    padding: 50px;
+    margin: 20px 0;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#Letter {
+    background-color: #43766C;
+    color:#FFF5E1;
+   font-family: "Lora", serif;
+  font-weight:lighter;
+  word-spacing: 5px;
+    
+}
+
+
+#Cats {
+    background-color: #43766C;
+    color: #FFF5E1;
+    font-family: "Lora", serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Use 1fr for uniformity */
+    gap: 100px; /* Adjust this value for desired spacing between images */
+}
+
+#Cats img {
+    width: 100%; /* Make images fill the grid cell */
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 15px;
+    border: solid 1px #e9ecef; /* Adjusted for clarity */
+}
+
+#Cats h2 {
+    grid-column: 1 / -1; /* Span across all columns */
+}
+#Cats p {
+    grid-column: 1/-1;
+}
+input{
+    border-radius: 10px;
+}
+input[type="file"] {
+    display: none;
+
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #507687; /* Same as your header background */
+    color: white;
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #405d72; /* Darker shade for hover effect */
+}
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #8CD5C0;
+    background-color: #507687;
+}
